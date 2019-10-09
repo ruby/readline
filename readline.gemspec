@@ -9,9 +9,14 @@ Gem::Specification.new do |spec|
   spec.authors       = ['aycabta']
   spec.email         = ['aycabta@gmail.com']
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{It's a loader for "readline".}
+  spec.description   = <<~EOD
+    This is just loader for "readline". If Ruby has "readline-ext" gem that
+    is a native extension, this gem will load its first. If Ruby doesn't have
+    the "readline-ext" gem this gem will load "reline" that is a compatible
+    library with "readline-ext" gem and is implemented by pure Ruby.
+  EOD
+  spec.homepage      = 'https://github.com/ruby/readline'
   spec.license       = 'Ruby license'
 
   spec.files         = Dir['BSDL', 'COPYING', 'README.md', 'lib/readline.rb']
