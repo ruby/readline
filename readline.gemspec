@@ -14,9 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = 'Ruby license'
 
-  spec.files         = `git ls-files -z`.split('\x0').reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
+  spec.files         = Dir['BSDL', 'COPYING', 'README.md', 'lib/readline.rb']
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler'
