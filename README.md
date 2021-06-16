@@ -1,6 +1,9 @@
 # Readline Loader
 
-This is just loader for "readline". If Ruby has "readline-ext" gem that is a native extension, this gem will load its first. If Ruby doesn't have the "readline-ext" gem this gem will load "reline" that is a compatible library with "readline-ext" gem and is implemented by pure Ruby.
+This is just a loader for "readline". If Ruby has the "readline-ext" gem
+that is a native extension, this gem will load it. If Ruby does not have
+the "readline-ext" gem this gem will load "reline", a library that is
+compatible with the "readline-ext" gem and implemented in pure Ruby.
 
 ## License
 
